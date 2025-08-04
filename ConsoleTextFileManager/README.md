@@ -13,7 +13,8 @@ A simple console application for managing data collections in text files, implem
 - [Contributing](#contributing)
 - [License](#license)
 
-## ✨ Features
+
+## Features
 
 - Create collections with customizable columns
 - Read data from existing collections
@@ -22,12 +23,12 @@ A simple console application for managing data collections in text files, implem
 - Automatic storage directory management
 - Interactive console interface
 
-## 🔧 Prerequisites #prerequisites 
+## Prerequisites #prerequisites 
 
 - [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet)
 - A code editor like [Visual Studio Code](https://code.visualstudio.com/) or [Visual Studio 2022+](https://visualstudio.microsoft.com/)
 
-## 🚀 Installation
+## Installation
 
 1. Clone the repository:
 ```bash
@@ -49,7 +50,7 @@ A simple console application for managing data collections in text files, implem
   bash dotnet build
 ```
 
-## 📖 Usage
+## Usage
 
 1. Run the application:
 ```bash
@@ -62,7 +63,7 @@ bash dotnet run
    - 3: Delete - Remove a record by ID
    - 4: Create Collection - Create a new collection
 
-## 📁 Data Structure
+## Data Structure
 
 Collections are stored as text files in the `./files` directory with the following format:
 
@@ -73,13 +74,13 @@ Collections are stored as text files in the `./files` directory with the followi
 Example file:
 id;name;email:1;John Doe;john@example.com:2;Jane Smith;jane@example.com
 
-## 🛠️ Technologies
+## Technologies
 
 - .NET 9.0
 - C# 13.0
 - File system for data storage
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please:
 
@@ -90,11 +91,11 @@ Contributions are welcome! Please:
 5. Push to the branch: `git push origin feature/your-feature`
 6. Submit a pull request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🏗️ Project Structure
+## Project Structure
 ```
 ConsoleTextFileManager/
 ├── src/
@@ -109,7 +110,7 @@ ConsoleTextFileManager/
 └── LICENSE # License file
 ```
 
-## 🔍 Class Documentation
+## Class Documentation
 
 ### ConsoleApplication
 Abstract class that handles the main application flow and user interaction.
@@ -126,7 +127,7 @@ Generic class for handling operation results:
 - `Success`: Creates a success result with a value and message
 - `Fail`: Creates a failure result with an error message
 
-## 🔄 Data Flow
+## Data Flow
 
 1. **Creating a Collection**
    - User provides collection name
@@ -148,7 +149,7 @@ Generic class for handling operation results:
    - User provides record ID
    - System removes the matching record
 
-## 📝 Notes
+## Notes
 
 - All file operations are performed synchronously
 - Data is stored in plain text format
